@@ -24,8 +24,8 @@ function App() {
                     luminosity: 'light'
                 }),
                 defaultPos: {
-                    x: 500,
-                    y: -500,
+                    x: 550,
+                    y: -550,
                 }
             }
             setItems((items) => [...items, newItem]);
