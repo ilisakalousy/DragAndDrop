@@ -1,4 +1,23 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    html, body {
+        margin: 0;
+    } 
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+`;
 
 export const StyledWrapper = styled.div`
     display: flex;
@@ -19,7 +38,6 @@ export const StyledInput = styled.input`
     color: white;
     padding: 0 10px;
     word-wrap: break-word;
-    font-family: 'Poppins', sans-serif;
 
     &:focus {
         outline: none;
@@ -34,7 +52,6 @@ export const StyledButton = styled.button`
     border: 1px solid whitesmoke;
     color: #fff;
     margin-left: 10px;
-    font-family: 'Poppins', sans-serif;
 `;
 
 export const StyledTodo = styled.div`
@@ -45,7 +62,6 @@ export const StyledTodo = styled.div`
     padding: 20px 35px 20px 20px;
     border-radius: 5px;
     cursor: grab;
-    font-family: 'Poppins', sans-serif;
 `;
 
 export const CloseButton = styled.button`

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
  
-import { StyledWrapper, StyledButton, StyledInput, StyledTodo, CloseButton } from './styled';
+import { GlobalStyle, StyledWrapper, StyledButton, StyledInput, StyledTodo, CloseButton, GlobalStyled } from './styled';
 import Draggable from 'react-draggable';
 import randomColor from 'randomcolor';
 
@@ -45,6 +45,7 @@ function App() {
 
   return (
     <>
+        <GlobalStyle />
         <StyledWrapper>
             <StyledInput 
                 type="text"
